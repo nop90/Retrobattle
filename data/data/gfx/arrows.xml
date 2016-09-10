@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<sprite version="1" name="arrow">
+  <animation name="left" loop="false">
+   <image path="arrows.bmp" size_x="14" size_y="14" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="0" y="0" dur="1000" />
+  </animation>
+  <animation name="right" loop="false">
+   <image path="arrows.bmp" size_x="14" size_y="14" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="1" y="0" dur="1000" />
+  </animation>
+  <animation name="down" loop="false">
+   <image path="arrows.bmp" size_x="14" size_y="14" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="2" y="0" dur="1000" />
+  </animation>
+</sprite>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<sprite version="1" name="flame">
+  <animation name="left" loop="true">
+   <image path="flame.bmp" size_x="7" size_y="8" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="0" y="0" dur="30" />
+   <frame x="2" y="0" dur="30" />
+  </animation>
+  <animation name="right" loop="true">
+   <image path="flame.bmp" size_x="7" size_y="8" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="1" y="0" dur="30" />
+   <frame x="2" y="0" dur="30" />
+  </animation>
+</sprite>

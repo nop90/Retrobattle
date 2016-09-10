@@ -1,0 +1,222 @@
+
+#include <sf2d.h>
+#include <sfil.h>
+#include "SDL_3ds.h"
+
+u8 language = 1;
+const char* stdErr = "SDL ERROR";
+
+int SDL_Init(int flag) //returns 0 on success, -1 on failure 
+{
+
+	if(flag & SDL_INIT_VIDEO)
+	{
+		sf2d_init();
+		sf2d_set_3D(false);
+		sf2d_set_vblank_wait(true);
+		sf2d_set_clear_color(0xff000000);
+		
+		osSetSpeedupEnable(true);
+		
+		romfsInit();
+		cfguInit();
+
+#ifdef CITRA_CONSOLE_OUTPUT
+		consoleInit (GFX_BOTTOM, NULL);
+#endif 
+
+		// Read the language field from the config savegame.
+		CFGU_GetSystemLanguage(&language);
+		
+    }
+	if(flag & SDL_INIT_AUDIO)
+		soundInit();
+
+    return 0;
+}
+
+
+void SDL_Quit()
+{
+	soundClose();
+	cfguExit();
+    romfsExit();
+	sf2d_fini();
+
+}
+
+int SDL_GetTicks()
+{
+    return svcGetSystemTick()/TICKS_PER_MSEC;
+}
+
+void SDL_Delay(int ms)
+{
+	svcSleepThread(ms*TICKS_PER_MSEC);
+}
+
+// stubbed win functions
+void SDL_WM_SetCaption(const char* caption,void* p) {return;}
+void SDL_WM_SetIcon(void* i, void* p) {return;}
+void SDL_ShowCursor(int s) {return;}
+
+u8 eventstate=0;
+u8 eventbit=0;
+
+int SDL_PollEvent(SDL_Event * event)
+{
+
+	if (eventstate==0)
+	{
+		hidScanInput();
+		eventstate++;
+		eventbit=0;
+		if(!aptMainLoop())
+		{
+			event->type=SDL_QUIT;
+			return 1;
+		}
+	}
+	// add sys events
+	if (eventstate==1)
+	{
+		while(!(hidKeysDown() & (1<<eventbit)) && eventbit<16)
+			eventbit++;
+		if(eventbit>=16)	
+		{
+			eventstate++;
+			eventbit=0;
+		} else {
+			event->type=SDL_KEYDOWN;
+			event->key.keysym.sym = 1<<eventbit;
+			eventbit++;
+			return 1;
+		}
+	}
+	if (eventstate==2)
+	{
+		while(!(hidKeysUp() & (1<<eventbit)) && eventbit<16)
+			eventbit++;
+		if(eventbit>=16)	
+		{
+			eventstate++;
+			eventbit=28;
+		} else {
+			event->type=SDL_KEYUP;
+			event->key.keysym.sym = 1<<eventbit;
+			eventbit++;
+			return 1;
+		}
+	}
+	if (eventstate==3)
+	{
+		while(!(hidKeysDown() & (1<<eventbit)) && eventbit<32)
+			eventbit++;
+		if(eventbit>=32)	
+		{
+			eventstate++;
+			eventbit=28;
+		} else {
+			event->type=SDL_JOYBUTTONDOWN;
+			event->jbutton.button = 1<<(eventbit-28);
+			eventbit++;
+			return 1;
+		}
+	}
+	if (eventstate==4)
+	{
+		while(!(hidKeysUp() & (1<<eventbit)) && eventbit<32)
+			eventbit++;
+		if(eventbit>=32)	
+		{
+			eventstate++;
+			eventbit=0;
+		} else {
+			event->type=SDL_JOYBUTTONUP;
+			event->jbutton.button = 1<<(eventbit-28);
+			eventbit++;
+			return 1;
+		}
+	}
+	// add touchpad events
+	eventstate=0;
+	eventbit=0;
+	return 0;
+}
+
+int getTouchX(){
+	touchPosition pos;	
+	hidTouchRead(&pos);
+	return pos.px;
+}
+
+int getTouchY(){
+	touchPosition pos;	
+	hidTouchRead(&pos);
+	return pos.py;
+}
+
+int SDL_GetKeyState(void* p)
+{
+	return hidKeysHeld();
+}
+
+int getLanguage(void)
+{
+	return language;
+}
+
+void setLanguage(int languageID)
+{
+	if (languageID>5) language = 1;
+	else if (languageID<1) language = 5;
+	else language = languageID;
+ 
+}
+
+int SDL_JoystickNumButtons(void * joystick){
+	return 0;
+}
+
+int SDL_JoystickGetButton(void * joystick, int i){
+	return 0;
+}
+
+void SDL_JoystickClose(void * joystick){
+	return ;
+}
+
+int SDL_NumJoysticks(){
+	return 0;
+}
+
+void * SDL_JoystickOpen(int j){
+	return NULL;
+}
+
+void SDL_JoystickEventState(int f){}
+
+
+void SDL_PumpEvents(){
+	return;
+}
+
+const char * SDL_GetError(){
+	return stdErr;
+}
+
+SDL_RWops* SDL_RWFromMem(unsigned char * buffer, unsigned int filesize)
+{
+    SDL_RWops* rw;
+	rw = (SDL_RWops*) malloc(sizeof(SDL_RWops));
+	if(!rw) return NULL;
+	rw->data=buffer;
+	rw->size=filesize;
+	return rw;
+}
+
+void SDL_FreeRW(SDL_RWops * rw){
+	if (rw) 
+		free(rw);
+}
+

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<font version="1" name="text" size_x="16" size_y="16">
+  <charset>
+    <image name="text" path="text.bmp" key="000000" />
+    <char id="a" x="0" y="0" />
+    <char id="b" x="1" y="0" />
+    <char id="c" x="2" y="0" />
+    <char id="d" x="3" y="0" />
+    <char id="e" x="4" y="0" />
+    <char id="f" x="5" y="0" />
+    <char id="g" x="6" y="0" />
+    <char id="h" x="7" y="0" />
+    <char id="i" x="8" y="0" />
+    <char id="j" x="9" y="0" />
+    <char id="k" x="10" y="0" />
+    <char id="l" x="11" y="0" />
+    <char id="m" x="12" y="0" />
+    <char id="n" x="13" y="0" />
+    <char id="o" x="14" y="0" />
+    <char id="p" x="15" y="0" />
+    <char id="q" x="16" y="0" />
+    <char id="r" x="17" y="0" />
+    <char id="s" x="18" y="0" />
+    <char id="t" x="19" y="0" />
+    <char id="u" x="20" y="0" />
+    <char id="v" x="21" y="0" />
+    <char id="w" x="22" y="0" />
+    <char id="x" x="23" y="0" />
+    <char id="y" x="24" y="0" />
+    <char id="z" x="25" y="0" />
+  </charset>
+  <charset>
+    <image name="numbers" path="numbers.bmp" key="000000" />
+    <char id="0" x="0" y="0" />
+    <char id="1" x="1" y="0" />
+    <char id="2" x="2" y="0" />
+    <char id="3" x="3" y="0" />
+    <char id="4" x="4" y="0" />
+    <char id="5" x="5" y="0" />
+    <char id="6" x="6" y="0" />
+    <char id="7" x="7" y="0" />
+    <char id="8" x="8" y="0" />
+    <char id="9" x="9" y="0" />
+    <char id="#" x="10" y="0" />
+  </charset>
+</font>

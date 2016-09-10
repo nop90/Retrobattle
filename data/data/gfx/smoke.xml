@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<sprite version="1" name="smoke">
+  <animation name="normal" loop="false">
+   <image path="smoke.bmp" size_x="28" size_y="28" key="000000"
+          orig_x="-2" orig_y="-2" />
+   <frame x="0" y="0" dur="150" />
+   <frame x="1" y="0" dur="150" />
+   <frame x="2" y="0" dur="150" />
+   <frame x="3" y="0" dur="150" />
+   <frame empty="true" dur="1000" />
+  </animation>
+</sprite>

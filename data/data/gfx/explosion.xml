@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<sprite version="1" name="explosion">
+  <animation name="normal" loop="false">
+   <image path="explo.bmp" size_x="24" size_y="24" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="0" y="0" dur="100" />
+   <frame empty="true" dur="100" />
+   <frame x="0" y="0" dur="100" />
+   <frame empty="true" dur="100" />
+   <frame x="0" y="0" dur="100" />
+   <frame empty="true" dur="100" />
+   <frame x="0" y="0" dur="100" />
+   <frame empty="true" dur="100" />
+  </animation>
+</sprite>

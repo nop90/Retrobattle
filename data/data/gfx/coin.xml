@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<sprite version="1" name="coin">
+  <animation name="blink" loop="true">
+   <image path="coin.bmp" size_x="16" size_y="24" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="0" y="0" dur="250" />
+   <frame x="1" y="0" dur="250" />
+  </animation>
+  <animation name="pling" loop="false">
+   <image path="pling.bmp" size_x="22" size_y="30" key="000000"
+          orig_x="3" orig_y="3" />
+   <frame x="0" y="0" dur="150" />
+   <frame x="1" y="0" dur="150" />
+   <frame x="2" y="0" dur="150" />
+   <frame x="3" y="0" dur="150" />
+   <frame x="4" y="0" dur="150" />
+  </animation>
+</sprite>

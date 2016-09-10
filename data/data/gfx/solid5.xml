@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<tileset version="1" name="red solid">
+  <image path="solid5.bmp" size_x="32" size_y="32" key="000000" />
+</tileset>

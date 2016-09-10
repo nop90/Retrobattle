@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<sprite version="1" name="hshot">
+  <animation name="normal" loop="true">
+    <image path="hshot.bmp" size_x="6" size_y="6" key="000000"
+           orig_x="0" orig_y="0" />
+    <frame x="0" y="0" dur="150" />
+    <frame x="1" y="0" dur="150" />
+  </animation>
+</sprite>

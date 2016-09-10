@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<sprite version="1" name="good">
+  <animation name="run right" loop="true">
+   <image path="goodright.bmp" size_x="16" size_y="24" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="1" y="0" dur="50" />
+   <frame x="2" y="0" dur="50" />
+   <frame x="3" y="0" dur="50" />
+   <frame x="0" y="0" dur="50" />
+  </animation>
+  <animation name="run left" loop="true">
+   <image path="goodleft.bmp" size_x="16" size_y="24" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="1" y="0" dur="50" />
+   <frame x="2" y="0" dur="50" />
+   <frame x="3" y="0" dur="50" />
+   <frame x="0" y="0" dur="50" />
+  </animation>
+  <animation name="death right" loop="false">
+    <image path="deathright.bmp" size_x="16" size_y="24" key="000000"
+           orig_x="0" orig_y="0" />
+    <frame y="0" x="0" dur="1000" />
+    <frame y="0" x="1" dur="80" />
+    <frame y="0" x="2" dur="80" />
+    <frame y="0" x="3" dur="80" />
+    <frame y="0" x="4" dur="80" />
+    <frame y="0" x="5" dur="80" />
+    <frame y="0" x="6" dur="80" />
+    <frame y="0" x="7" dur="80" />
+    <frame y="0" x="8" dur="80" />
+    <frame y="0" x="9" dur="80" />
+    <frame y="0" x="10" dur="80" />
+    <frame y="0" x="11" dur="80" />
+    <frame y="0" x="12" dur="80" />
+    <frame y="0" x="13" dur="80" />
+    <frame y="0" x="14" dur="80" />
+    <frame empty="true" dur="1000" />
+  </animation>
+  <animation name="death left" loop="false">
+    <image path="deathleft.bmp" size_x="16" size_y="24" key="000000"
+           orig_x="0" orig_y="0" />
+    <frame y="0" x="0" dur="1000" />
+    <frame y="0" x="1" dur="80" />
+    <frame y="0" x="2" dur="80" />
+    <frame y="0" x="3" dur="80" />
+    <frame y="0" x="4" dur="80" />
+    <frame y="0" x="5" dur="80" />
+    <frame y="0" x="6" dur="80" />
+    <frame y="0" x="7" dur="80" />
+    <frame y="0" x="8" dur="80" />
+    <frame y="0" x="9" dur="80" />
+    <frame y="0" x="10" dur="80" />
+    <frame y="0" x="11" dur="80" />
+    <frame y="0" x="12" dur="80" />
+    <frame y="0" x="13" dur="80" />
+    <frame y="0" x="14" dur="80" />
+    <frame empty="true" dur="1000" />
+  </animation>
+
+  <animation name="stand right" loop="false">
+    <image path="goodright.bmp" size_x="16" size_y="24" key="000000"
+           orig_x="0" orig_y="0" />
+    <frame x="0" y="0" dur="1" />
+  </animation>
+  <animation name="stand left" loop="false">
+    <image path="goodleft.bmp" size_x="16" size_y="24" key="000000"
+           orig_x="0" orig_y="0" />
+    <frame x="0" y="0" dur="1" />
+  </animation>
+
+  <animation name="fly right" loop="false">
+    <image path="goodright.bmp" size_x="16" size_y="24" key="000000"
+           orig_x="0" orig_y="0" />
+    <frame x="2" y="0" dur="1" />
+  </animation>
+  <animation name="fly left" loop="false">
+    <image path="goodleft.bmp" size_x="16" size_y="24" key="000000"
+           orig_x="0" orig_y="0" />
+    <frame x="2" y="0" dur="1" />
+  </animation>
+
+  <animation name="blink right" loop="true">
+    <image path="goodright.bmp" size_x="16" size_y="24" key="000000"
+           orig_x="0" orig_y="0" />
+    <frame x="0" y="0" dur="150" />
+    <frame empty="true" dur="150" />
+  </animation>
+  <animation name="blink left" loop="true">
+    <image path="goodleft.bmp" size_x="16" size_y="24" key="000000"
+           orig_x="0" orig_y="0" />
+    <frame x="0" y="0" dur="150" />
+    <frame empty="true" dur="150" />
+  </animation>
+
+</sprite>

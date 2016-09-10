@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<sprite version="1" name="dark explosion">
+  <animation name="normal" loop="true">
+   <image path="darkexplo.bmp" size_x="32" size_y="32" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="0" y="0" dur="17" />
+   <frame x="1" y="0" dur="17" />
+   <frame empty="true" dur="17" />
+  </animation>
+</sprite>

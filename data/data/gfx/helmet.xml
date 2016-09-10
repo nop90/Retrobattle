@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<sprite version="1" name="helmet">
+  <animation name="normal" loop="false">
+   <image path="bonuses.bmp" size_x="20" size_y="20" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="10" y="0" dur="1000" />
+  </animation>
+</sprite>

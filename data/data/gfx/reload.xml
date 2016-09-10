@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<sprite version="1" name="reload">
+  <animation name="show" loop="false">
+   <image path="reload.bmp" size_x="12" size_y="12" key="000001"
+          orig_x="0" orig_y="0" />
+   <frame x="0" y="0" dur="1000" />
+  </animation>
+  <animation name="hide" loop="false">
+   <image path="blackcover.bmp" size_x="12" size_y="12" key="000001"
+          orig_x="0" orig_y="0" />
+   <frame x="0" y="0" dur="1000" />
+  </animation>
+</sprite>

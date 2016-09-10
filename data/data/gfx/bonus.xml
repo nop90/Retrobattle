@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<sprite version="1" name="bonus">
+  <animation name="small coins" loop="false">
+   <image path="bonuses.bmp" size_x="20" size_y="20" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="0" y="0" dur="1000" />
+  </animation>
+
+  <animation name="diamond" loop="false">
+   <image path="bonuses.bmp" size_x="20" size_y="20" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="1" y="0" dur="1000" />
+  </animation>
+
+  <animation name="gold bar" loop="false">
+   <image path="bonuses.bmp" size_x="20" size_y="20" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="2" y="0" dur="1000" />
+  </animation>
+
+  <animation name="blue pearl" loop="false">
+   <image path="bonuses.bmp" size_x="20" size_y="20" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="3" y="0" dur="1000" />
+  </animation>
+
+  <animation name="white ball" loop="false">
+   <image path="bonuses.bmp" size_x="20" size_y="20" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="4" y="0" dur="1000" />
+  </animation>
+
+  <animation name="lock" loop="false">
+   <image path="bonuses.bmp" size_x="20" size_y="20" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="5" y="0" dur="1000" />
+  </animation>
+
+  <animation name="power gun" loop="false">
+   <image path="bonuses.bmp" size_x="20" size_y="20" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="6" y="0" dur="1000" />
+  </animation>
+
+  <animation name="laser gun" loop="false">
+   <image path="bonuses.bmp" size_x="20" size_y="20" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="7" y="0" dur="1000" />
+  </animation>
+
+  <animation name="clock" loop="false">
+   <image path="bonuses.bmp" size_x="20" size_y="20" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="8" y="0" dur="1000" />
+  </animation>
+
+  <animation name="bomb" loop="false">
+   <image path="bonuses.bmp" size_x="20" size_y="20" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="9" y="0" dur="1000" />
+  </animation>
+
+  <animation name="quake" loop="false">
+   <image path="bonuses.bmp" size_x="20" size_y="20" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="11" y="0" dur="1000" />
+  </animation>
+
+</sprite>

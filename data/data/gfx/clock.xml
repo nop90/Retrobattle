@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<sprite version="1" name="clock">
+  <animation name="normal" loop="false">
+   <image path="thing.bmp" size_x="14" size_y="16" key="000001"
+          orig_x="0" orig_y="0" />
+   <frame x="0" y="0" dur="1000" />
+  </animation>
+  <animation name="blink" loop="true">
+   <image path="thing.bmp" size_x="14" size_y="16" key="000001"
+          orig_x="0" orig_y="0" />
+   <frame x="0" y="0" dur="200" />
+   <frame x="1" y="0" dur="200" />
+  </animation>
+</sprite>

@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<tileset version="1" name="maintiles">
+  <image path="maintiles.bmp" size_x="16" size_y="16" key="000000" />
+</tileset>

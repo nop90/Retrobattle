@@ -1,0 +1,328 @@
+RETROBATTLE
+Remar Games 2012
+
+
+Table of contents
+ 1. Story
+ 2. Controls
+ 3. Gameplay
+ 4. Scoring and highscore
+ 5. Bonus stage
+ 6. Skill level
+ 7. Enemies
+ 8. Bonus pick-ups
+
+
+--------
+1. STORY
+--------
+
+In the far distant future, space trade between interplanetary
+civilizations has grown common, and the cargo ships keep getting
+larger to carry the increasing supplies of trading goods. The largest
+cargo ship ever built, named Retro Perihelion, was a heavily armored
+and secure ship that was going to carry the largest amount of money
+and valuables in history to a planetary safehouse. However, when a
+band of thieves and pirates heard about this ship, they amassed an
+army of rouges to shoot it down and raid it of its cargo. After a long
+battle, the Retro Perihelion was heavily damaged and crashed on the
+surface of an unexplored planet. This planet turned out to be the home
+of many vicious alien races, and the band of pirates soon fell victim
+to them when trying to raid the ship.
+
+The federation owning the Retro Perihelion and its cargo sent out a
+courageous galactic police, known as Captain Good, to infiltrate the
+spaceship and reclaim as many of its valuables as possible.
+
+
+-----------
+2. CONTROLS
+-----------
+
+ MAIN SCREEN
+Enter: Start the game
+Left/right: Select starting stage
+Down: Select starting Skill level
+Spacebar: Change the key bindings
+Escape: Quit the game
+
+ IN-GAME
+Left/right: Move left/right
+Z: Jump (keep pressed to jump higher)
+X: Shoot
+P: Pause/unpause
+Escape: Go back to the main screen
+
+
+-----------
+3. GAMEPLAY
+-----------
+
+The main goal of this arcade-like game is to collect all 8 coins in
+each stage to progress to the next, while collecting treasures and
+getting a high score. The game keeps going until Captain Good is
+defeated, at which point he's warped back to the federation control to
+try again, and depending on how much score you have gotten, you may
+set a new highscore. Apart from the 8 coins, there are also other
+bonuses and treasures that randomly appear on the playing field, as
+well as hordes of dangerous enemies that must be avoided or defeated.
+
+At the start of each stage, and each time Captain Good loses a life
+and re-appears, he is invincible until the first time he moves or
+shoots. During this time, he is blinking, the time will not count
+down, the Drones will not dig through any blocks, the Bounty Hunters
+will not appear, and no pick-up bonuses will appear. You can take this
+moment to relax and survey the stage, and make sure that no enemies
+are close by when you start moving.
+
+Captain Good, as well as the enemies, can warp around the screen by
+leaving the playing field on the left and right sides.
+
+Captain Good begins each stage with 8 shots for his standard gun,
+displayed by the white circles in the upper left corner of the screen.
+Whenever the gun has less than 8, it will automatically begin
+recharging the ammunition, indicated by the green progress bar above
+the ammunition counter. It takes 8 seconds to recharge a shot, so be
+careful not to use them all up at once. You can also see a little
+number above Captain Good's head that tells you how much ammo you have
+- this number appears whenever your ammunition supply increases or
+decreases, so you don't have to take your eyes off the action to check
+your ammo.
+
+The walls of the spaceship, which are built of blocks in a grid-like
+fashion, can be destroyed with the blaster. They re-appear after a
+while, as long as there is nothing obstructing them. There are also
+some blocks you cannot destroy; these are solid in the middle, rather
+than hollow. The blue, reinforced walls at the edges of the playing
+field are also indestructible.
+
+You have a limited time of 200 seconds to clear each stage. If the
+time runs out, you lose a life, and the time goes back to 100 seconds.
+You must also face many enemies - the most common is the blue Fuzz,
+which is defeated by stunning it with a blaster shot and pushing it
+off an edge from a high distance. There are also deadly spikes on the
+spaceship's lowest floor, which were activated as a safety measure
+when the pirates once invaded the abondoned ship. The spikes are
+lethal both to Captain Good and the Fuzz, if they are pushed so that
+they fall down on the spikes. All other enemies avoid the spikes
+completely.
+
+When you have collected all 8 coins on the playing field, or if
+Captain Good loses all his lives, the score screen is displayed. If
+the game is over, you are returned to the main screen where your last
+score is displayed, along with the highscore.
+
+
+------------------------
+4. SCORING AND HIGHSCORE
+------------------------
+
+Getting a high score is the main aim of the game. You also get an
+extra life for every 30'000 points you get - you can get up to 8 extra
+lives this way.
+
+In the score screen, the time left, the coins gathered and the enemies
+defeated are tallied, and their worth are added to your score. Note
+that you can only defeat one Space viper and one Bounty Hunter on each
+stage. Also note that you don't get any points for the seconds left on
+the clock if the time ever ran out during the stage or all lives were
+lost. The highest score is generally achieved the faster you beat the
+stage.
+
+Time: 20 points for each second
+Coins: 100 points * Skill level
+Fuzz: 120 points
+Drones: 200 points
+Space Viper: 1200 points
+Bounty Hunter: 1000 points
+
+The game keeps track of the highest score ever achieved, and saves it
+in ~/.config/retrobattle. Your control settings are also saved
+here. If your current score is higher than the highscore, it becomes
+the new highscore. If you remove this directory, the highscore is reset
+to 0, and the keys bindings are reset to the defaults.
+
+
+--------------
+5. BONUS STAGE
+--------------
+
+After clearing 4 stages, you are taken to a bonus stage. If you
+collect all 10 coins within the time limit in this stage, you get a
+bonus of 2000 points. You have unlimited ammunition in the bonus
+stages, and the coins are worth more depending on the number of the
+stage. If the time runs out, you do not lose a life, but the stage
+ends and you get no bonus points (except for the coins you gathered).
+There are 8 increasingly taxing bonus stages, and the Skill level
+increases after visiting one (up to Skill 8).
+
+
+--------------
+6. SKILL LEVEL
+--------------
+
+There are 8 Skill levels, and you can start the game at any one you
+want. Every time you pass a bonus stage, the Skill level increases, so
+the game gets harder.
+
+At Skill 1, only a few Fuzz and Drones appear.
+
+At Skill 2, more Fuzz and Drones appear, the Fuzz now move faster, and
+a Space Viper appears.
+
+At Skill 3, even more Fuzz and Drones appear, the Viper's body grows
+longer, and a Bounty Hunter appears.
+
+At Skill 4, even more Fuzz appear, the Viper's body grows even longer,
+all blocks take 2 hits to destroy, and the "Quake" pick-up will start
+to appear.
+
+At Skill 5, all Fuzz become Red Fuzz.
+
+At Skill 6, all Drones become Gold Drones.
+
+At Skill 7, all Space Vipers become Dire Space Vipers.
+
+At Skill 8, all Bounty Hunters become Dark Bounty Hunters. When you
+reach Skill 8, the Skill level stops increasing, but the bonus levels
+keep cycling.
+
+
+----------
+7. ENEMIES
+----------
+
+FUZZ (a blue fuzzy ball)
+These lowly, yet dangerous, aliens climb around the walls of the
+spaceship looking for food. They either travel in a clockwise or
+counter-clockwise fashion, and will only change direction if they are
+about to walk into a set of spikes. If they lose their footing and
+fall to the floor, pay attention to which way they are spinning, so
+you can anticipate which way they are going to travel when they hit
+the ground. There are two ways of defeating Fuzz: either making them
+fall onto a set of spikes, or stunning them with your gun and pushing
+them off an edge from a high distance. When stunned, they must fall a
+distance equal to 2 blocks or higher to be destroyed when they hit the
+ground.
+
+NEST (a blue fuzz-shaped vortex)
+The Fuzz appear from the nests, which hover in the air. A nest starts
+blinking just before a Fuzz pops out. The nests themselves are
+harmless, and you cannot destroy them in any way. If the number of
+Fuzz on the playing field is lower than the maximum number of Fuzz
+allowed, new Fuzz will start popping out of the nests at 8 second
+intervals.
+
+DRONE (a slow, grey spiky robot)
+These robotic soldiers, once brought to the crashed spaceship by the
+pirates for protection, have gone haywire and attack anything in their
+path. Luckily their path is a completely random one, but their sharp
+edges and spikes means that they sometimes dig through the blocks on
+the playing field. If they are caught in between four blocks, they'll
+force their way out by digging through one of them. It takes 2 hits to
+destroy a Drone.
+
+SPACE VIPER (a green snake)
+These sly creatures move behind the other things on the playing field,
+as they randomly prowl the stage. They can retract and extend
+themselves if need be, so if they get caught in a dead-end, they'll
+simply fold themselves up and turn around. They will not cross over
+themselves, and they don't dig through blocks. Space Vipers are
+powerful creatures, and fighting them is not advised - it takes 6
+direct hits to the head to defeat them, and like the Drones, their
+erratic movement makes them hard to target.
+
+BOUNTY HUNTER (a teleporting armed cyborg)
+A large number of bounty hunters and space raiders have tried to scour
+the crashed spaceship of its valuables, only to fall prey to the
+aliens inhabiting it. Some of these were infested by the aliens, and
+now search the spaceship for more adventurers to attack and feast on.
+These infested Bounty Hunters use a powerful blaster, and possess a
+local phase shifting device that lets them teleport around the playing
+field. Luckily the alien infestation has crippled their ability to fly
+around, so they rely on their teleportation device to move, and stay
+stationary wherever they end up, firing at intruders. It takes 4 hits
+to destroy the Bounty Hunters, which makes the ammunition in their
+suits explode violently, damaging blocks and dealing 2 points of
+damage to the enemies around them. This explosion is harmless to you,
+but it may cause more enemies to drop in where blocks were destroyed.
+The Bounty Hunters can only be damaged while they are not busy
+teleporting.
+
+RED FUZZ (a red fuzzy ball)
+Unlike blue Fuzz, these can randomly change direction without
+warning.
+
+GOLD DRONE (a slow, yellow spiky robot)
+These sentries have a tendency to hunt their enemies down more
+effectively than the standard Drones. They take 2 hits to destroy.
+
+DIRE SPACE VIPER (a purple snake)
+These lethal snakes tend to move towards Captain Good more often than
+regular Vipers. They take 6 hits directly to the head to defeat.
+
+DARK BOUNTY HUNTER (a teleporting armed cyborg)
+Armed with upgraded dark blasters that cause large explosions wherever
+they hit, and the ability to teleport more frequently than regular
+Bounty Hunters, these flying nightmares have put an end to many a
+careless adventurer. They take 4 hits to destroy.
+
+
+-----------------
+8. BONUS PICK-UPS
+-----------------
+
+Bonus items will randomly appear during play, and will stay on the
+playing field until you exit the stage or pick them up. Small coins,
+diamonds, gold bars and blue pearls are the most common bonuses, while
+clocks, bombs and quakes are the most rare ones.
+
+SMALL COINS
+Gives 200 bonus points.
+
+DIAMOND
+Gives 250 bonus points.
+
+GOLD BAR
+Gives 300 bonus points.
+
+BLUE PEARL
+Gives 400 bonus points.
+
+WHITE BALL
+Refills all the ammunition for your standard gun.
+
+LOCK
+Locks all the Fuzz Nests for 50 seconds, so that no new Fuzz can
+appear. The only drawback is that you won't get as much score as you
+normally would, as there will be less Fuzz to defeat.
+
+POWER GUN
+This weapon temporarily replaces your standard gun, and the word POWER
+appears in the upper right corner of the screen. It only has one shot,
+so you lose the Power gun when you fire it. When the shot hits
+something, it causes a huge explosion that destroys blocks and deals 2
+points of damage to all enemies caught in it. Note that the explosion
+aligns itself to the grid of blocks on the playing field.
+
+LASER GUN
+Like the Power gun, this weapon only has one shot, and disappears when
+you use it. When you possess it, the word LASER appears in the upper
+right corner of the screen. It fires a searing laser blast that cuts
+straight through blocks and deals 2 points of damage to all enemies
+caught in the line of fire. Note that the laser blast aligns itself to
+the grid of blocks on the playing field; this means that it will only
+cut through one horizontal line of blocks, never two.
+
+CLOCK
+Adds 50 additional seconds to the timer.
+
+BOMB
+Instantly stuns all Fuzz, destroys all Drones and deals 2 points of
+damage to the Space Viper and Bounty Hunter (unless it's busy
+teleporting). If a Fuzz is just about to jump out of a nest when the
+bomb detonates, the Fuzz will not appear.
+
+QUAKE
+Damages all undamaged blocks on the screen. It doesn't destroy the
+blocks that are already damaged. Only appears on Skill 4 and above.

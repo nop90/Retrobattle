@@ -1,0 +1,31 @@
+ MUSIC
+*stage
+*clear
+
+ CAPTAIN GOOD
+*walk
+*shoot
+*explo
+*jump
+*death
+*coin
+*pickup
+
+ FUZZ
+*spawn
+*stun
+*splat
+*wake
+
+ SNAKE
+*pain
+
+ GLOBAL
+*start
+*scoretick
+*bonus
+*pause
+*bomb
+*quake
+*life
+*dot

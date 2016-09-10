@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<sprite version="1" name="nest">
+
+  <animation name="normal" loop="true">
+    <image path="nest.bmp" size_x="26" size_y="26" key="000000"
+           orig_x="0" orig_y="0" />
+    <frame x="0" y="0" dur="100" />
+    <frame x="1" y="0" dur="100" />
+    <frame x="2" y="0" dur="100" />
+    <frame x="3" y="0" dur="100" />
+  </animation>
+
+  <animation name="blink" loop="true">
+    <image path="nestblinking.bmp" size_x="26" size_y="26" key="000000"
+           orig_x="0" orig_y="0" />
+    <frame x="0" y="0" dur="150" />
+    <frame x="1" y="0" dur="150" />
+    <frame x="2" y="0" dur="150" />
+    <frame x="3" y="0" dur="150" />
+  </animation>
+
+  <animation name="locked" loop="false">
+    <image path="lockednest.bmp" size_x="26" size_y="26" key="000000"
+           orig_x="0" orig_y="0" />
+    <frame x="0" y="0" dur="1" />
+  </animation>
+
+</sprite>

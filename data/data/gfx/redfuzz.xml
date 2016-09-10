@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<sprite version="1" name="red fuzz">
+  <animation name="roll right" loop="true">
+    <image path="redfuzz.bmp" size_x="24" size_y="24" key="000000"
+           orig_x="0" orig_y="0" />
+    <frame x="0" y="0" dur="60" />
+    <frame x="1" y="0" dur="60" />
+    <frame x="2" y="0" dur="60" />
+  </animation>
+  <animation name="roll left" loop="true">
+    <image path="redfuzz.bmp" size_x="24" size_y="24" key="000000"
+           orig_x="0" orig_y="0" />
+    <frame x="0" y="0" dur="60" />
+    <frame x="2" y="0" dur="60" />
+    <frame x="1" y="0" dur="60" />
+  </animation>
+  <animation name="blink" loop="true">
+    <image path="redfuzz_blinking.bmp" size_x="24" size_y="24" key="000000"
+           orig_x="0" orig_y="0" />
+    <frame x="0" y="0" dur="150" />
+    <frame x="1" y="0" dur="250" />
+  </animation>
+  <animation name="stunned" loop="true">
+    <image path="redfuzz_stunned.bmp" size_x="24" size_y="24" key="92b2ff"
+           orig_x="0" orig_y="0" />
+    <frame x="0" y="0" dur="100" />
+    <frame x="1" y="0" dur="100" />
+    <frame x="2" y="0" dur="100" />
+    <frame x="3" y="0" dur="100" />
+  </animation>
+
+  <animation name="splat" loop="false">
+    <image path="splat4.bmp" size_x="32" size_y="32" key="000000"
+           orig_x="4" orig_y="4" />
+    <frame x="0" y="0" dur="100" />
+    <frame x="1" y="0" dur="100" />
+    <frame x="2" y="0" dur="100" />
+    <frame x="3" y="0" dur="100" />
+    <frame empty="true" dur="1000" />
+  </animation>
+
+</sprite>

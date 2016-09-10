@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<sprite version="1" name="ammo">
+  <animation name="show" loop="false">
+   <image path="ammo.bmp" size_x="10" size_y="10" key="000001"
+          orig_x="0" orig_y="0" />
+   <frame x="0" y="0" dur="1000" />
+  </animation>
+  <animation name="hide" loop="false">
+   <image path="blackcover.bmp" size_x="12" size_y="12" key="000001"
+          orig_x="1" orig_y="1" />
+   <frame x="0" y="0" dur="1000" />
+  </animation>
+</sprite>

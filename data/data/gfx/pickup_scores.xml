@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<sprite version="1" name="score sign">
+
+  <animation name="200" loop="false">
+   <image path="pickup_scores.bmp" size_x="22" size_y="9" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="0" y="0" dur="1000" />
+  </animation>
+
+  <animation name="250" loop="false">
+   <image path="pickup_scores.bmp" size_x="22" size_y="9" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="1" y="0" dur="1000" />
+  </animation>
+
+  <animation name="300" loop="false">
+   <image path="pickup_scores.bmp" size_x="22" size_y="9" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="2" y="0" dur="1000" />
+  </animation>
+
+  <animation name="400" loop="false">
+   <image path="pickup_scores.bmp" size_x="22" size_y="9" key="000000"
+          orig_x="0" orig_y="0" />
+   <frame x="3" y="0" dur="1000" />
+  </animation>
+
+</sprite>

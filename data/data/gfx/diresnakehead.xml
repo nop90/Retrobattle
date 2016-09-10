@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<sprite version="1" name="dire snake head">
+
+  <animation name="up" loop="true">
+   <image path="diresnake_up.bmp" size_x="24" size_y="24" key="00ffff"
+          orig_x="-4" orig_y="-4" />
+   <frame x="0" y="0" dur="250" />
+   <frame x="1" y="0" dur="250" />
+   <frame x="2" y="0" dur="250" />
+   <frame x="3" y="0" dur="250" />
+  </animation>
+
+  <animation name="down" loop="true">
+   <image path="diresnake_down.bmp" size_x="24" size_y="24" key="00ffff"
+          orig_x="-4" orig_y="-4" />
+   <frame x="0" y="0" dur="250" />
+   <frame x="1" y="0" dur="250" />
+   <frame x="2" y="0" dur="250" />
+   <frame x="3" y="0" dur="250" />
+  </animation>
+
+  <animation name="left" loop="true">
+   <image path="diresnake_left.bmp" size_x="24" size_y="24" key="00ffff"
+          orig_x="-4" orig_y="-4" />
+   <frame x="0" y="0" dur="250" />
+   <frame x="0" y="1" dur="250" />
+   <frame x="0" y="2" dur="250" />
+   <frame x="0" y="3" dur="250" />
+  </animation>
+
+  <animation name="right" loop="true">
+   <image path="diresnake_right.bmp" size_x="24" size_y="24" key="00ffff"
+          orig_x="-4" orig_y="-4" />
+   <frame x="0" y="0" dur="250" />
+   <frame x="0" y="1" dur="250" />
+   <frame x="0" y="2" dur="250" />
+   <frame x="0" y="3" dur="250" />
+  </animation>
+
+</sprite>

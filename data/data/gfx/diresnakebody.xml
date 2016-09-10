@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<sprite version="1" name="dire snake body">
+
+  <animation name="dark purple" loop="false">
+   <image path="diresnake_body.bmp" size_x="14" size_y="14" key="000000"
+          orig_x="-9" orig_y="-9" />
+   <frame x="0" y="0" dur="1000" />
+  </animation>
+
+  <animation name="light purple" loop="false">
+   <image path="diresnake_body.bmp" size_x="14" size_y="14" key="000000"
+          orig_x="-9" orig_y="-9" />
+   <frame x="1" y="0" dur="1000" />
+  </animation>
+
+  <animation name="splat" loop="false">
+   <image path="diresnake_splat.bmp" size_x="14" size_y="14" key="000000"
+          orig_x="-9" orig_y="-9" />
+   <frame x="0" y="0" dur="200" />
+   <frame x="1" y="0" dur="200" />
+   <frame x="2" y="0" dur="200" />
+   <frame x="3" y="0" dur="200" />
+   <frame x="4" y="0" dur="200" />
+   <frame x="5" y="0" dur="200" />
+   <frame x="6" y="0" dur="200" />
+   <frame empty="true" dur="1000" />
+  </animation>
+</sprite>
