@@ -548,6 +548,9 @@ void Mix_HaltMusic(void);
 void Mix_HaltChannel(int ch);
 
 
+void Mix_PauseMusic();
+void Mix_ResumeMusic();
+
 void* bufferizeFile(const char* filename, u32* size, bool binary, bool linear);
 
 #endif

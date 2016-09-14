@@ -481,3 +481,15 @@ void Mix_HaltChannel(int ch)
 	soundchannels[ch].playlen= 0;
 	soundchannels[ch].playstart=0;
 };
+
+void Mix_PauseMusic()
+{
+	CSND_SetPlayState(15, 0);//Stop music audio playback.
+	csndExecCmds(0);
+}
+
+void Mix_ResumeMusic()
+{
+	CSND_SetPlayState(15, 1);//Resume music audio playback.
+	csndExecCmds(0);
+}

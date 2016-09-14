@@ -62,9 +62,17 @@ void SDL_ShowCursor(int s) {return;}
 
 u8 eventstate=0;
 u8 eventbit=0;
+u8 muspaused=0;
 
 int SDL_PollEvent(SDL_Event * event)
 {
+
+	APT_AppStatus state = aptGetStatus();
+	if (state == APP_SUSPENDING)
+	{
+		Mix_PauseMusic();
+		muspaused=1;
+	}
 
 	if (eventstate==0)
 	{
@@ -74,7 +82,14 @@ int SDL_PollEvent(SDL_Event * event)
 		if(!aptMainLoop())
 		{
 			event->type=SDL_QUIT;
+			SDL_Quit();
+			exit(0);
 			return 1;
+		}
+		if (muspaused)
+		{
+			Mix_ResumeMusic();
+			muspaused = 0;
 		}
 	}
 	// add sys events

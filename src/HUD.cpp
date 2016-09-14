@@ -51,7 +51,8 @@ HUD::HUD(remar2d *gfx, ScoreKeeper *scoreKeeper)
 
   int lengths[6] = { 8, 8, 3, 2, 2, 1 };
   int pos_x[6] = {298, 522, 714, 298, 458, 618};
-  int pos_y[6] = {20, 20, 20, 50, 50, 50};
+//  int pos_y[6] = {20, 20, 20, 50, 50, 50};
+  int pos_y[6] = {21, 21, 21, 53, 53, 53};
 
   for(int i = 0;i < 6;i++)
     {
